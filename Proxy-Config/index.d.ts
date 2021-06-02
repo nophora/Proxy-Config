@@ -1,14 +1,3 @@
-// Type definitions for node-http-proxy 1.17
-// Project: https://github.com/nodejitsu/node-http-proxy
-// Definitions by: Maxime LUCE <https://github.com/SomaticIT>
-//                 Florian Oellerich <https://github.com/Raigen>
-//                 Daniel Schmidt <https://github.com/DanielMSchmidt>
-//                 Jordan Abreu <https://github.com/jabreu610>
-//                 Samuel Bodin <https://github.com/bodinsamuel>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.1
-
-/// <reference types="node" />
 
 import * as net from "net";
 import * as http from "http";
@@ -94,7 +83,7 @@ declare class Server extends events.EventEmitter {
    * @param options Config object passed to the proxy
    * @returns Proxy object with handlers for `ws` and `web` requests
    */
-  static createProxyServer(options?: Server.ServerOptions): Server;
+  static (options?: Server.ServerOptions): Server;
 
   /**
    * Creates the proxy server with specified options.
